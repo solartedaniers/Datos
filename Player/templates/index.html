@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor de Música</title>
+    <link rel="stylesheet" href="static/styles.css">
+</head>
+<body>
+    <button id="toggleTheme">Modo Oscuro</button>
+    <h1>Reproductor de Música</h1>
+    
+    <h2>Agregar Nueva Canción</h2>
+    <form id="addSongForm">
+        <input type="text" id="songTitle" placeholder="Título de la canción" required>
+        <input type="file" id="songFile" accept="audio/*" required>
+        <button type="submit">Agregar Canción</button>
+    </form>
+
+    <input type="text" id="search" placeholder="Buscar canción...">
+   
+    <div id="player">
+        <audio id="audio" controls>
+            <source id="audioSource" src="" type="audio/mp3">
+        </audio>
+        <button onclick="prevSong()">Anterior</button>
+        <button onclick="rewind10()">⏪ 10s</button>
+        <button onclick="forward10()">⏩ 10s</button>
+        <button onclick="nextSong()">Siguiente</button>
+    </div>
+    
+    <h2>Lista de Canciones</h2>
+    <ul id="songList"></ul>
+    
+    <h2>Favoritas</h2>
+    <ul id="favoriteList"></ul>
+
+    <script src="static/script.js"></script>
+</body>
+</html>

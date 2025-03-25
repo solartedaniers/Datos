@@ -1,0 +1,82 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+h1 {
+    color: inherit;
+}
+
+#player {
+    margin: 20px auto;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    cursor: pointer;
+    padding: 10px;
+    background: #ddd;
+    margin: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+li:hover {
+    background: #ccc;
+}
+
+.dark-mode li {
+    background: #555;
+}
+
+.dark-mode li:hover {
+    background: #777;
+}
+
+button {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #005f73;
+}
+
+button#toggleTheme {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+button.favorite {
+    background-color: red;
+    color: white;
+}
+
+button.favorite:hover {
+    background-color: darkred;
+}
+
+
+/*Se encarga de dar un diseño mas limpio y organiizado en la interfaz 
+/*Se encarga de implementar el modo oscuro 
+/*mejora la experiencia con efectos visuales
